@@ -42,6 +42,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     cell.textLabel.text = array[indexPath.section][indexPath.row];
+    cell.detailTextLabel.text = @"XDD";
     
     return cell;
 }

@@ -15,6 +15,7 @@
 		1D8637F21A08F6AB007538F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8637F11A08F6AB007538F2 /* Images.xcassets */; };
 		1D8637F51A08F6AB007538F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8637F31A08F6AB007538F2 /* LaunchScreen.xib */; };
 		1D8638011A08F6AC007538F2 /* tableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8638001A08F6AC007538F2 /* tableViewTests.m */; };
+		1D86380C1A08F796007538F2 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D86380B1A08F796007538F2 /* RootTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		1D8637FA1A08F6AC007538F2 /* tableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8637FF1A08F6AC007538F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D8638001A08F6AC007538F2 /* tableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewTests.m; sourceTree = "<group>"; };
+		1D86380A1A08F796007538F2 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		1D86380B1A08F796007538F2 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				1D8637EB1A08F6AB007538F2 /* ViewController.h */,
 				1D8637EC1A08F6AB007538F2 /* ViewController.m */,
 				1D8637EE1A08F6AB007538F2 /* Main.storyboard */,
+				1D86380A1A08F796007538F2 /* RootTableViewController.h */,
+				1D86380B1A08F796007538F2 /* RootTableViewController.m */,
 				1D8637F11A08F6AB007538F2 /* Images.xcassets */,
 				1D8637F31A08F6AB007538F2 /* LaunchScreen.xib */,
 				1D8637E81A08F6AB007538F2 /* tableView.xcdatamodeld */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D86380C1A08F796007538F2 /* RootTableViewController.m in Sources */,
 				1D8637E71A08F6AB007538F2 /* AppDelegate.m in Sources */,
 				1D8637E41A08F6AB007538F2 /* main.m in Sources */,
 				1D8637ED1A08F6AB007538F2 /* ViewController.m in Sources */,

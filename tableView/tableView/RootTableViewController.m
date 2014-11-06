@@ -47,9 +47,11 @@
     cell.detailTextLabel.text = @"XDD";
     
     if (indexPath.section == 0) {
-        UISwitch *switchControl = [[UISwitch alloc] initWithFrame:CGRectMake(1.0, 1.0, 20.0, 30.0)];
-        cell.accessoryView = switchControl;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        if (indexPath.row == 0) {
+            UISwitch *switchControl = [[UISwitch alloc] initWithFrame:CGRectMake(1.0, 1.0, 20.0, 30.0)];
+            cell.accessoryView = switchControl;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
     }
     return cell;
 }

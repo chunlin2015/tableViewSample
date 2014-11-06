@@ -15,8 +15,6 @@
 @property (strong, nonatomic) NSArray *section3;
 @property (strong, nonatomic) NSArray *array;
 
-@property (assign, nonatomic) NSUInteger selected;
-
 @end
 
 @implementation RootTableViewController
@@ -48,6 +46,10 @@
     cell.textLabel.text = array[indexPath.section][indexPath.row];
     cell.detailTextLabel.text = @"XDD";
     
+    if (indexPath.section == 0) {
+        UISwitch *switchControl = [[UISwitch alloc] initWithFrame:CGRectMake(1.0, 1.0, 20.0, 30.0)];
+        cell.accessoryView = switchControl;
+    }
     return cell;
 }
 

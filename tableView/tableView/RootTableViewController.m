@@ -15,6 +15,8 @@
 @property (strong, nonatomic) NSArray *section3;
 @property (strong, nonatomic) NSArray *array;
 
+@property (assign, nonatomic) NSUInteger selected;
+
 @end
 
 @implementation RootTableViewController
@@ -71,6 +73,22 @@
     UISwitch *switchControl = sender;
     NSUserDefaults *userPreferences = [NSUserDefaults standardUserDefaults];
     [userPreferences setBool:switchControl.on forKey:@"switchControl"];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 1) {
+        if (indexPath.row != self.selected) {
+            NSIndexPath *oldIndexPath = [NSIndexPath indexPathForRow:self.selected inSection:1];
+            UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:oldIndexPath];
+            oldCell.accessoryType = UITableViewCellAccessoryNone;
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            self.selected = indexPath.row;
+        }
+    }
 }
 
 /*

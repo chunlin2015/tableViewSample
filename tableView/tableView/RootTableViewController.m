@@ -93,6 +93,12 @@
             self.selected = indexPath.row;
         }
     }
+    
+    if (indexPath.section == 2) {
+        UIViewController *page2 = [self.storyboard instantiateViewControllerWithIdentifier:@"page2"];
+        page2.title = array[2][indexPath.row];
+        [self.navigationController pushViewController:page2 animated:YES];
+    }
 }
 
 /*

@@ -62,6 +62,12 @@
         if (indexPath.row == self.selected) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
+    } else if (indexPath.section == 2) {
+        if (indexPath.row == 0) {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        } else if (indexPath.row == 1) {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
     }
     
     return cell;

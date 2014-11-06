@@ -59,6 +59,11 @@
     return cell;
 }
 
+- (void)switchChanged:(id)sender {
+    UISwitch *switchControl = sender;
+    NSUserDefaults *userPreferences = [NSUserDefaults standardUserDefaults];
+    [userPreferences setBool:switchControl.on forKey:@"switchControl"];
+}
 
 /*
 // Override to support conditional editing of the table view.

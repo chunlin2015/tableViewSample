@@ -58,9 +58,7 @@
             switchControl.on = [userPreferences boolForKey:@"switchControl"];
             [switchControl addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
         }
-    }
-    
-    if (indexPath.section == 1) {
+    } else if (indexPath.section == 1) {
         if (indexPath.row == self.selected) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }

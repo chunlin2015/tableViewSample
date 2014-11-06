@@ -12,20 +12,24 @@
 
 @property (strong, nonatomic) NSArray *section1;
 @property (strong, nonatomic) NSArray *section2;
+@property (strong, nonatomic) NSArray *section3;
 @property (strong, nonatomic) NSArray *array;
+
+@property (assign, nonatomic) NSUInteger selected;
 
 @end
 
 @implementation RootTableViewController
 
-@synthesize section1, section2, array;
+@synthesize section1, section2, section3, array;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    section1 = @[@"General", @"Privacy"];
-    section2 = @[@"iCloud", @"Map2", @"Safari", @"Photo & Camera", @"Game Center"];
-    array = @[section1, section2];
+    section1 = @[@"多工處理手勢"];
+    section2 = @[@"鎖定螢幕旋轉", @"靜音"];
+    section3 = @[@"自動鎖定", @"iCYCU"];
+    array = @[section1, section2, section3];
 }
 
 #pragma mark - Table view data source

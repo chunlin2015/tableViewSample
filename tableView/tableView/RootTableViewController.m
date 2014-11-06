@@ -54,6 +54,7 @@
             
             NSUserDefaults *userPreferences = [NSUserDefaults standardUserDefaults];
             switchControl.on = [userPreferences boolForKey:@"switchControl"];
+            [switchControl addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
         }
     }
     return cell;
